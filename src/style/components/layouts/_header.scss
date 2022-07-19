@@ -1,0 +1,36 @@
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: black;
+  img {
+    height: 60px;
+  }
+  .header__brand {
+    display: flex;
+    align-items: center;
+    .header__brand--name {
+      h1 {
+        font-family: $dolce;
+        color: white;
+        font-size: $fs-xxxl;
+        margin-left:1rem;
+        span{
+          font-family: $dolceBold;
+          color: white;
+          font-size: $fs-xxxl;
+        }
+      }
+      h2 {
+        font-family: $dolce;
+        color: white;
+        font-size: $fs-lg;
+        margin: .5rem 0 0 1rem; 
+      }
+    }
+  }
+}
