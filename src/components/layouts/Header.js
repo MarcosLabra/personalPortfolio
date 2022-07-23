@@ -3,8 +3,9 @@ import NavBar from './NavBar'
 
 
 const Header = () => {
+
     return (
-        <header>
+        <header className='header'>
             <div className='header__brand'>
                 <img src="/images/corazonHeader.svg" alt="" />
                 <div className="header__brand--name">

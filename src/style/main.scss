@@ -37,6 +37,9 @@ $fs-xl: 1.6rem;
 $fs-xxl: 2rem;
 $fs-xxxl: 2.8rem;
 
+//box-shadow
+$bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
+
 //extends
 
 %title {
@@ -51,6 +54,7 @@ $fs-xxxl: 2.8rem;
 @import "./components/cover";
 @import "./components/aboutMe";
 @import "./components/skills";
+@import "./components/portfolio";
 
 //Layouts
 @import "./components/layouts/header";
