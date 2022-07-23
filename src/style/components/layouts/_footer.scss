@@ -1,0 +1,33 @@
+footer {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $casiNegro;
+  .credits {
+    p {
+      font-family: $pioggia;
+      color: $fondoOscuro;
+      font-size: $fs-mdg;
+    }
+    h4 {
+      font-family: $dolce;
+      color: $colorTitulos;
+      font-size: $fs-lg;
+      span {
+        font-family: $dolceBold;
+        color: $colorTitulos;
+        font-size: $fs-lg;
+      }
+    }
+  }
+  .social {
+    a {
+        padding-left: 1rem;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
