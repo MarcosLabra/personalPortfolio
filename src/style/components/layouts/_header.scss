@@ -1,28 +1,31 @@
 .header {
-  height: 10vh;
+  z-index: 100;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: 0;
+  top: 0;
+  height: 10vh;
   width: 100vw;
-  padding: 1rem 2rem;
   background-color: black;
+  padding: 1.5rem;
   img {
-    height: 60px;
+    height: 50px;
   }
   .header__brand {
     display: flex;
     align-items: center;
+   
     .header__brand--name {
       h1 {
         font-family: $dolce;
         color: white;
-        font-size: $fs-xxxl;
+        font-size: $fs-xxl;
         margin-left:1rem;
         span{
           font-family: $dolceBold;
           color: white;
-          font-size: $fs-xxxl;
+          font-size: $fs-xxl;
         }
       }
       h2 {

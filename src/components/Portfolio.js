@@ -47,27 +47,33 @@ const Portfolio = () => {
             <h2>Portfolio</h2>
             <div className="portfolio__container">
                 <h3>Freelance Proyects</h3>
-                {freelance.map(freelance => (
-                    <div className="portfolio__container--proyect">
-                        <img className="portfolio__container--proyect--img" src={freelance.background} alt={freelance.title} />
-                        <div className="portfolio__container--proyect--description" >
-                            <a href={freelance.url} target="_blank" rel="noreferrer">
-                                <img src={freelance.logo} alt={freelance.title} />
-                            </a>
+                <div className="portfolio__container--wrap">
+                    {freelance.map(freelance => (
+                        <div className="portfolio__container--proyect">
+                            <img className="portfolio__container--proyect--img" src={freelance.background} alt={freelance.title} />
+                            <div className="portfolio__container--proyect--description" >
+                                <a href={freelance.url} target="_blank" rel="noreferrer">
+                                    <img src={freelance.logo} alt={freelance.title} />
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+
+                </div>
                 <h3>Student Proyects</h3>
-                {student.map(student => (
-                    <div className="portfolio__container--proyect">
-                        <img className="portfolio__container--proyect--img" src={student.background} alt={student.title} />
-                        <div className="portfolio__container--proyect--description" >
-                            <a href={student.url} target="_blank" rel="noreferrer">
-                                <img src={student.logo} alt={student.title} />
-                            </a>
+                <div className="portfolio__container--wrap">
+                    {student.map(student => (
+                        <div className="portfolio__container--proyect">
+                            <img className="portfolio__container--proyect--img" src={student.background} alt={student.title} />
+                            <div className="portfolio__container--proyect--description" >
+                                <a href={student.url} target="_blank" rel="noreferrer">
+                                    <img src={student.logo} alt={student.title} />
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+
             </div>
 
         </section>

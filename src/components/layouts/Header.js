@@ -1,20 +1,39 @@
 import Hamburger from 'hamburger-react'
 import NavBar from './NavBar'
+import MobileMenu from './MobileMenu';
+import { useState } from 'react';
 
 
 const Header = () => {
 
+    const [isOpen, setOpen] = useState(false);
+
+    function handleClickMenu(toggled) {
+        if (toggled) {
+            document.getElementById('mobileMenu').classList.add('show');
+        } else {
+            document.getElementById('mobileMenu').classList.remove('show');
+        }
+    }
+
+    function toggleState() {
+        setOpen(false);
+    }
+
     return (
-        <header className='header'>
-            <div className='header__brand'>
-                <img src="/images/corazonHeader.svg" alt="" />
-                <div className="header__brand--name">
-                    <h1>Marcos <span>Labra</span></h1>
-                    <h2>Front-End Developer</h2>
+        <>
+            <header className='header'>
+                <div className='header__brand'>
+                    <img src="/images/corazonHeader.svg" alt="" />
+                    <div className="header__brand--name">
+                        <h1>Marcos <span>Labra</span></h1>
+                        <h2>Front-End Developer</h2>
+                    </div>
                 </div>
-            </div>
-            {window.innerWidth > 768 ? <NavBar /> : <Hamburger color="#fff" size={25} />}
-        </header>
+                {window.innerWidth > 768 ? <NavBar /> : <Hamburger size={25} color="#ffffff" onToggle={handleClickMenu} toggled={isOpen} toggle={setOpen} />}
+            </header>
+            <MobileMenu toggleState={toggleState} />
+        </>
     )
 }
 
