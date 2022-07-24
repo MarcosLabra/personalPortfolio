@@ -2,7 +2,7 @@
 
 const Cover = () => {
     return (
-        <section className="cover">
+        <section id="cover" className="cover">
             <img src="/images/corazon.svg" alt="" />
         </section>
     )

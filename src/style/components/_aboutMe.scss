@@ -1,6 +1,6 @@
 .aboutMe {
   padding: 2rem 5%;
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 9vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +45,54 @@
           color: #fff;
           font-size: $fs-lg;
         }
+      }
+    }
+  }
+  a {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+    p {
+      margin-left: 1rem;
+      font-family: $disketMono;
+      color: #fff;
+      font-size: $fs-lg;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .aboutMe {
+    .aboutMe__container {
+      .aboutMe__cuality {
+        .aboutMe__cuality--description {
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutMe {
+    padding: 2rem 20%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .aboutMe {
+    h2 {
+      font-size: 3.2rem;
+    }
+    .aboutMe__container {
+      .aboutMe__cuality {
+        margin: 1.5rem;
       }
     }
   }

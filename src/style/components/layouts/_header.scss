@@ -12,28 +12,97 @@
   img {
     height: 50px;
   }
-  .header__brand {
-    display: flex;
-    align-items: center;
-   
-    .header__brand--name {
-      h1 {
-        font-family: $dolce;
-        color: white;
-        font-size: $fs-xxl;
-        margin-left:1rem;
-        span{
-          font-family: $dolceBold;
+  a {
+    text-decoration: none;
+
+    .header__brand {
+      display: flex;
+      align-items: center;
+
+      .header__brand--name {
+        h1 {
+          font-family: $dolce;
           color: white;
-          font-size: $fs-xxl;
+          font-size: $fs-xxxl;
+          margin-left: 1rem;
+          transition: all 0.3s ease-in-out;
+          span {
+            font-family: $dolceBold;
+            color: white;
+            font-size: $fs-xxxl;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        h2 {
+          font-family: $dolce;
+          color: white;
+          font-size: $fs-xl;
+          margin: 0.5rem 0 0 1rem;
+          transition: all 0.3s ease-in-out;
         }
       }
-      h2 {
-        font-family: $dolce;
-        color: white;
-        font-size: $fs-lg;
-        margin: .5rem 0 0 1rem; 
+    }
+    &:hover {
+      cursor: pointer;
+      .header__brand--name {
+        h1 {
+          color: $colorTitulos;
+          span {
+            color: $fondoClaro;
+          }
+        }
+        h2 {
+          color: $colorTitulos;
+        }
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 3rem;
+    .header__brand {
+      .header__brand--name {
+        h1 {
+          font-size: $fs-xxxl;
+          margin-left: 2rem;
+          span {
+            font-size: $fs-xxxl;
+          }
+        }
+        h2 {
+          font-size: $fs-xl;
+          margin: 0.5rem 0 0 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    a {
+      .header__brand {
+        .header__brand--name {
+          h1 {
+            font-size: $fs-xxl;
+
+            span {
+              font-size: $fs-xxl;
+            }
+          }
+          h2 {
+            font-size: $fs-mdg;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    padding: 0 5rem;
   }
 }

@@ -1,6 +1,6 @@
 .skills {
   padding: 2rem 5%;
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 9vh;
   width: 100vw;
   background-color: black;
   display: flex;
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: center;
     .skills__container--skill {
-      margin: 2rem;
+      margin: 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,6 +31,27 @@
         height: 100px;
         object-fit: contain;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .skills {
+    padding: 2rem 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills {
+    padding: 2rem 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .skills {
+    padding: 2rem 25%;
+    h2{
+      font-size: 3.2rem;
     }
   }
 }

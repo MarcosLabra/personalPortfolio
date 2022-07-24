@@ -3,7 +3,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $casiNegro;
+  background-color: #111111;
   .credits {
     p {
       font-family: $pioggia;
@@ -22,12 +22,132 @@ footer {
     }
   }
   .social {
-    a {
-        padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    .social__mail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      p {
+        opacity: 0;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        padding: 1rem;
+        border-radius: 10px;
+        font-family: $disketMono;
+        color: $colorTitulos;
+        font-size: $fs-lg;
+        background-color: #111111b4;
+        transition: all 0.5s ease-in-out;
+      }
+      .show {
+        opacity: 1;
+      }
       img {
         width: 30px;
         height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          filter: drop-shadow(0 0 10px $colorTitulos);
+        }
       }
     }
+    a {
+      padding-left: 1rem;
+      img {
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          filter: drop-shadow(0 0 10px $colorTitulos);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 2rem;
+    .credits {
+      p {
+        font-size: $fs-xl;
+      }
+      h4 {
+        font-size: $fs-xxl;
+        span {
+          font-size: $fs-xxl;
+        }
+      }
+    }
+    .social {
+      .social__mail {
+        p {
+          top: 0;
+          left: -250px;
+          font-size: $fs-xl;
+          border-radius: 0;
+          background-color: transparent;
+        }
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      a {
+        padding-left: 2rem;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 1rem;
+    .credits {
+      p {
+        font-size: $fs-lg;
+      }
+      h4 {
+        font-size: $fs-xl;
+        span {
+          font-size: $fs-xl;
+        }
+      }
+    }
+    .social {
+      .social__mail {
+        p {
+          left: -220px;
+          font-size: $fs-lg;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      a {
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  footer {
+    padding: 1rem 5rem;
   }
 }

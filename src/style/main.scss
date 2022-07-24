@@ -16,6 +16,26 @@ html {
     rgba(119, 254, 213, 1) 100%
   );
 }
+body {
+  overflow-x: hidden;
+  background-color: #111111;
+}
+//custom-scrollbar
+::-webkit-scrollbar{
+  width: 15px;
+  background-color: #111111;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #536c7875;
+  &:hover{
+    background-color: #536c78e7;
+  }
+}
+@supports (scrollbar-color: #536c78e7 #111111){
+  *{
+    scrollbar-color: #536c78e7 #111111
+  }
+}
 //variables
 $colorTitulos: #00d7ff;
 $fondoOscuro: #027c93;
@@ -62,3 +82,4 @@ $bs: 3px 3px 3px hsla(0, 0%, 0%, 0.25);
 @import "./components/layouts/header";
 @import "./components/layouts/footer";
 @import "./components/layouts/mobileMenu";
+@import "./components/layouts/navBar";

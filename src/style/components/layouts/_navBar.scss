@@ -1,0 +1,18 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-family: $dolceBold;
+    color: $colorTitulos;
+    font-size: $fs-xxl;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $fondoClaro;
+    }
+    &:active{
+      color: $fondoOscuro;
+    }
+  }
+}
