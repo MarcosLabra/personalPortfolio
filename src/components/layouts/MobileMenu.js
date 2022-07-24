@@ -1,10 +1,18 @@
 const MobileMenu = ({ toggleState }) => {
+
+    function handleClick() {
+        if (document.getElementById('mobileMenu').classList.contains('show')) {
+            document.getElementById('mobileMenu').classList.toggle('show');
+        }
+        toggleState();
+    }
+
     return (
         <section className="mobileMenu" id="mobileMenu">
             <div className="mobileMenu__nav">
-                <h3>ABOUT ME</h3>
-                <h3>SKILLS</h3>
-                <h3>PORTFOLIO</h3>
+                <a href="/#aboutMe" onClick={handleClick} oncli>ABOUT ME</a>
+                <a href="/#skills" onClick={handleClick}>SKILLS</a>
+                <a href="/#portfolio"onClick={handleClick}>PORTFOLIO</a>
             </div>
             <div className="mobileMenu__social">
                 <a href="https://github.com/MarcosLabra" target="_blank" rel="noreferrer">

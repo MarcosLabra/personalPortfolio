@@ -12,7 +12,11 @@
   background-color: #000000de;
   transition: all 1s ease-in-out;
   .mobileMenu__nav {
-    h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
       font-family: $dolceBold;
       color: $colorTitulos;
       font-size: $fs-xxxl;
@@ -34,4 +38,3 @@
 .show {
   top: 0;
 }
-

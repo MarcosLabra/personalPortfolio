@@ -20,19 +20,21 @@ const AboutMe = () => {
         ]
 
     return (
-        <section className="aboutMe">
+        <section id="aboutMe" className="aboutMe">
             <h2>About Me</h2>
-            {cualities.map((cuality) => {
-                return (
-                    <div className="aboutMe__cuality">
-                        <h3>{cuality.title}</h3>
-                        <div className="aboutMe__cuality--description">
-                            <p>{cuality.description}</p>
+            <div className="aboutMe__container">
+                {cualities.map((cuality) => {
+                    return (
+                        <div className="aboutMe__cuality">
+                            <h3>{cuality.title}</h3>
+                            <div className="aboutMe__cuality--description">
+                                <p>{cuality.description}</p>
+                            </div>
                         </div>
-                    </div>
-                )
-            }
-            )}
+                    )
+                }
+                )}
+            </div>
         </section>
     )
 }
