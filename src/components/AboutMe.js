@@ -35,7 +35,7 @@ const AboutMe = () => {
                 }
                 )}
             </div>
-            <a download={"MLabra-CV"} href="https://drive.google.com/uc?id=1Xdamg2FcTNiZqvuqIm4kdi8DfJPue8p8&export=download&authuser=0">
+            <a download={"MLabra-CV"} href="https://drive.google.com/uc?id=1lBREDXeAhENRKG01OQ7NBJmB2oMaVOSC&export=download&authuser=0">
                 <img src="/images/download-solid.svg" alt="" />
                 <p>Download CV</p>
             </a>
