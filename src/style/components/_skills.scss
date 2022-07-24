@@ -30,6 +30,10 @@
         width: 80px;
         height: 100px;
         object-fit: contain;
+        transition: all 1s ease-in-out;
+        &:hover {
+          transform: rotate(360deg);
+        }
       }
     }
   }

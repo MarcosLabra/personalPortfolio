@@ -21,6 +21,13 @@ footer {
       }
     }
   }
+  .copyright{
+    p {
+      font-family: $dolceBold;
+      color: $colorTitulos;
+      font-size: $fs-lg;
+    }
+  }
   .social {
     display: flex;
     align-items: center;
@@ -84,6 +91,11 @@ footer {
         }
       }
     }
+    .copyright{
+      p {
+        font-size: $fs-xxl;
+      }
+    }
     .social {
       .social__mail {
         p {
@@ -112,7 +124,7 @@ footer {
 
 @media (min-width: 1200px) {
   footer {
-    padding: 1rem;
+    padding: 1rem 2rem;
     .credits {
       p {
         font-size: $fs-lg;
@@ -122,6 +134,11 @@ footer {
         span {
           font-size: $fs-xl;
         }
+      }
+    }
+    .copyright{
+      p {
+        font-size: $fs-xl;
       }
     }
     .social {

@@ -39,11 +39,15 @@
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease-in-out;
         p {
           text-align: center;
           font-family: $disketMono;
           color: #fff;
           font-size: $fs-lg;
+        }
+        &:hover {
+          box-shadow: 0 4px 30px #00d9ff93;;
         }
       }
     }
@@ -64,6 +68,11 @@
       font-family: $disketMono;
       color: #fff;
       font-size: $fs-lg;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $colorTitulos;
+        text-shadow: $bs;
+      }
     }
   }
 }
