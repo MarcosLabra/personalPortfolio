@@ -9,31 +9,25 @@ html {
 }
 .app {
   background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(2, 124, 147, 1) 40%,
-    rgba(119, 254, 213, 1) 100%
-  );
 }
 body {
   overflow-x: hidden;
   background-color: #111111;
 }
 //custom-scrollbar
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 15px;
   background-color: #111111;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #536c7875;
-  &:hover{
+  &:hover {
     background-color: #536c78e7;
   }
 }
-@supports (scrollbar-color: #536c78e7 #111111){
-  *{
-    scrollbar-color: #536c78e7 #111111
+@supports (scrollbar-color: #536c78e7 #111111) {
+  * {
+    scrollbar-color: #536c78e7 #111111;
   }
 }
 //variables
