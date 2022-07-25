@@ -9,7 +9,7 @@
   position: relative;
   .cover__heartLogo {
     width: 250px;
-    animation: 1.5s ease 0s infinite beat;
+    animation: 2.5s ease 0s infinite beat;
   }
   .cover__angleDown {
     position: absolute;
@@ -24,12 +24,12 @@
   50%,
   100% {
     transform: scale(1, 1);
-    filter: drop-shadow(0px 0px 25px #00ffff);
+    filter: drop-shadow(0px 0px 15px #00ffff);
   }
   30%,
   80% {
     transform: scale(0.92, 0.95);
-    filter: drop-shadow(0px 0px 25px transparent);
+    filter: drop-shadow(0px 0px 15px transparent);
     
   }
 }
